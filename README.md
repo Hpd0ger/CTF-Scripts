@@ -15,3 +15,5 @@
 * ffi-leak.php: PHP7.4 FFI extension use to leak data，来源：[@cjm00n](https://cjm00n.top/CTF/tctf-2020-wp.html)
 
 * port-scan.js: JS探测内网主机端口/内网主机
+
+* gopher.py: 生成post的gopher数据报文
