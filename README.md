@@ -17,3 +17,5 @@
 * port-scan.js: JS探测内网主机端口/内网主机
 
 * gopher.py: 生成post的gopher数据报文
+
+* UploadServer.py: 以当前目录，快速启动一个带有文件上传/下载功能代理服务器. Usage: python2 UploadServer.py 8888
