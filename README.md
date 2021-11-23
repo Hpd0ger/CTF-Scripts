@@ -1,14 +1,14 @@
 # CTF-Scripts
-一些简单的scripts，慢慢push
 
+## 目录结构
 ├── README.md
-├── compress-zlib.py 
+├── compress-zlib.py
 ├── ffi-leak.php
 ├── geneshell.php
 ├── geneshell2.php
 ├── misc
 │   └── UploadServer.py
-├── node-ssrf-split.js node<=8.0 http.get拆分请求构造，对于生成的数据进行encodeUR操作即可
+├── node-ssrf-split.js
 ├── port-scan.js
 ├── serialize.php
 ├── thread
@@ -16,10 +16,14 @@
 │   └── contend2.py
 └── transform
     ├── convert2javabytes.py
-    ├── encoding.js JS8/16进制/Unicode标准格式转换
+    ├── encoding.js
     ├── gopher.py
     └── gopherConvert.py
 
+## 文件说明
+* encoding.js: JS8/16进制/Unicode标准格式转换
+
+* node-ssrf-split.js: node<=8.0 http.get拆分请求构造，对于生成的数据进行encodeUR操作即可
 
 * serialize.php: 对于private/protected属性，序列化后S类型转换(截取phpgcc部分功能)
 
