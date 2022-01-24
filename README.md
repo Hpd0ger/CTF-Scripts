@@ -2,6 +2,7 @@
 
 ## 目录结构
 ```
+.
 ├── README.md
 ├── compress-zlib.py
 ├── ffi-leak.php
@@ -11,6 +12,7 @@
 │   └── UploadServer.py
 ├── node-ssrf-split.js
 ├── port-scan.js
+├── readflag
 ├── serialize.php
 ├── thread
 │   ├── contend.py
@@ -19,6 +21,7 @@
     ├── convert2javabytes.py
     ├── encoding.js
     ├── gopher.py
+    ├── gopher2mysql.py
     └── gopherConvert.py
 ```
 
@@ -41,6 +44,8 @@
 
 * gopher.py: 生成post的gopher数据报文
 
+* gopher2mysql.py: 生成与mysql交互的gopher数据报文
+
 * UploadServer.py: 以当前目录，快速启动一个带有文件上传/下载功能代理服务器. Usage: python2 UploadServer.py 8888
 
 * contend.py: threading条件竞争模版，用来竞争php sess文件
@@ -49,4 +54,7 @@
 
 * gopherConvert.py: wireshark网卡数据包转gopher数据形式
 
-* convert2javabytes.py: 转字符串为16进制形式，方便java中的命令执行例如：${T(java.lang.Runtime).getRuntime().exec(new String(new byte[]{0x6f,0x70,0x65,0x6e,0x20,0x2d,0x61,0x20,0x43,0x61,0x6c,0x63,0x75,0x6c,0x61,0x74,0x6f,0x72}))}
+* convert2javabytes.py: 转字符串为16进制字节码，方便java中的命令执行例如EL表达式：${T(java.lang.Runtime).getRuntime().exec(new String(new byte[]{0x6f,0x70,0x65,0x6e,0x20,0x2d,0x61,0x20,0x43,0x61,0x6c,0x63,0x75,0x6c,0x61,0x74,0x6f,0x72}))}
+
+* c\perl交互readflag脚本：[readflag](https://github.com/ZeddYu/ReadFlag)
+
