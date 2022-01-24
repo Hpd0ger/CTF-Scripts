@@ -42,6 +42,8 @@
 
 * port-scan.js: JS探测内网主机端口/内网主机
 
+* gopherConvert.py: wireshark网卡数据包转gopher数据形式
+
 * gopher.py: 生成post的gopher数据报文
 
 * gopher2mysql.py: 生成与mysql交互的gopher数据报文
@@ -51,8 +53,6 @@
 * contend.py: threading条件竞争模版，用来竞争php sess文件
 
 * contend2.py: 比较优雅的进行条件竞争模版，来自@P神
-
-* gopherConvert.py: wireshark网卡数据包转gopher数据形式
 
 * convert2javabytes.py: 转字符串为16进制字节码，方便java中的命令执行例如EL表达式：${T(java.lang.Runtime).getRuntime().exec(new String(new byte[]{0x6f,0x70,0x65,0x6e,0x20,0x2d,0x61,0x20,0x43,0x61,0x6c,0x63,0x75,0x6c,0x61,0x74,0x6f,0x72}))}
 
