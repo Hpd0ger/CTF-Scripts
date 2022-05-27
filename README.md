@@ -42,6 +42,8 @@
 
 * port-scan.js: JS探测内网主机端口/内网主机
 
+* xss-bot.js: XSS机器人
+
 * gopherConvert.py: wireshark网卡数据包转gopher数据形式
 
 * gopher.py: 生成post的gopher数据报文
