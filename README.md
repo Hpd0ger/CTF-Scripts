@@ -2,7 +2,6 @@
 
 ## 目录结构
 ```
-.
 ├── README.md
 ├── javascript
 │   ├── node-ssrf-split.js
@@ -13,6 +12,7 @@
 │   ├── compress-zlib.py
 │   └── download.sh
 ├── php
+│   ├── calcSig.py
 │   ├── ffi-leak.php
 │   ├── geneshell.php
 │   ├── geneshell2.php
@@ -42,6 +42,7 @@
 | geneshell2.php  |  另一种无字母Shell生成函数，无短标签  |
 |  compress-zlib.php | file_get_contents生成本地临时文件，使用socket原生套接字改写Http请求&响应包。双线程发送http请求，参考36c3 CTF includer:[includer](https://ljdd520.github.io/2020/01/15/hxp-36c3-ctf-Web-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/)  |
 |  ffi-leak.php | PHP7.4 FFI extension use to leak data，来源：[@cjm00n](https://cjm00n.top/CTF/tctf-2020-wp.html)  |
+|  calcSig.py | 根据内容计算phar的签名，生成新的phar文件  |
 | gopherConvert.py  | wireshark网卡数据包转gopher数据形式  |
 | gopher.py  | 生成post的gopher数据报文  |
 |  gopher2mysql.py | 生成与mysql交互的gopher数据报文  |
