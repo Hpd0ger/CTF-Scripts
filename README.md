@@ -2,10 +2,39 @@
 
 ## 目录结构
 ```
+.
 ├── README.md
+├── dockers
+│   └── docker_php_debug
+│       ├── README.md
+│       ├── docker-compose.yml
+│       ├── logs
+│       │   └── nginx
+│       │       ├── access.log
+│       │       ├── error.log
+│       │       ├── info.log
+│       │       └── notice.log
+│       ├── mysql
+│       │   ├── Dockerfile
+│       │   ├── db.sql
+│       │   └── xyhcms.sql
+│       ├── nginx
+│       │   ├── Dockerfile
+│       │   ├── nginx.conf
+│       │   └── templates
+│       │       └── default.conf.template
+│       ├── php-fpm
+│       │   ├── Dockerfile
+│       │   ├── mongodb-1.14.1.tgz
+│       │   ├── www.conf
+│       │   ├── xdebug-3.1.5.tgz
+│       │   └── xdebug.ini
+│       └── source
+│           └── test.php
 ├── javascript
 │   ├── node-ssrf-split.js
 │   ├── port-scan.js
+│   ├── test.js
 │   └── xss-bot.js
 ├── misc
 │   ├── UploadServer.py
@@ -52,3 +81,4 @@
 | contend2.py|比较优雅的进行条件竞争模版，来自@P神 |
 |convert2javabytes.py |转字符串为16进制字节码，方便java中的命令执行例如EL表达式：${T(java.lang.Runtime).getRuntime().exec(new String(new byte[]{0x6f,0x70,0x65,0x6e,0x20,0x2d,0x61,0x20,0x43,0x61,0x6c,0x63,0x75,0x6c,0x61,0x74,0x6f,0x72}))} |
 | c\perl交互readflag脚本| [readflag](https://github.com/ZeddYu/ReadFlag)|
+| docker_php_debug| docker远程调试php板子，mysql+nginx+php-fpm+xdebug|

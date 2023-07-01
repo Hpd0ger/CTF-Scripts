@@ -26,5 +26,5 @@ var Unicode = {
 	}
 };
 
-console.log(str2code("aa")); //\x61\x61
-console.log(Unicode.stringify("aa")); //\u0061\u0061
+console.log(str2code("<img src=x onerror=alert(1)>123</img>")); //\x61\x61
+// console.log(Unicode.stringify("aa")); //\u0061\u0061

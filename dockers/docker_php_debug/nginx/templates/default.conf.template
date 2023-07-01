@@ -1,0 +1,22 @@
+server {
+  listen ${NGINX_PORT};
+  server_name ${NGINX_HOST};
+  root /usr/share/nginx/html;
+  index index.php index.html;
+
+  location / {
+      try_files $uri $uri/ /index.php?$query_string;
+  }
+
+  location ~ \.php$ {
+          try_files $uri /index.php =404;
+          fastcgi_pass fastcgi_backend;
+          fastcgi_index index.php;
+          fastcgi_buffers 16 16k;
+          fastcgi_buffer_size 32k;
+          fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+          #fixes timeouts
+          fastcgi_read_timeout 600;
+          include fastcgi_params;
+      }
+}
