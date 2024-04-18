@@ -1,0 +1,1 @@
+更改Rule.yml中的正则规则后，需要重新加载BurpSuite HAE插件才能生效
